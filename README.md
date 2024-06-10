@@ -5,7 +5,7 @@ Data Visualization
 
 Define dataset:
 CBD Dataset - up to 2021
-https://www.cbd.gov.au/about-cbd-program/performance-program/download-cbd-program-dat
+https://www.cbd.gov.au/about-cbd-program/performance-program/download-cbd-program-data
 
 
 Define visualizations:
