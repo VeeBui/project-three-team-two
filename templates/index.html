@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <title>Commercial Building Disclosure</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   
@@ -22,52 +23,23 @@
 
 </head>
 
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 p-5 text-center bg-light">
-        <h1>Project 3 Team 2</h1>
-        <h1>Building Disclosure Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
-      </div>
-    </div>
-    <br>
+  <body>
+    <div class="container">
       <div class="row">
-      <div class="col-md-3">
-        <div class="card card-body bg-light">
-          <h6>Post Code</h6>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
-        <br>
-        <div class="card card-primary">
-          <div class="card-header">
-            <h6 class="card-title">Post Code Info</h6>
-          </div>
-          <div id="sample-metadata" class="card-body"></div>
+        <div class="col-md-12 p-5 text-center bg-light">
+          <h1>Project 3 Team 2</h1>
+          <h1>Building Disclosure Interactive Map</h1>
+          <p>Use the map below click on a marker to explore the dataset</p>
         </div>
       </div>
-      <div class="col-md-9">
-        <div id="bar"></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
+      <br>
       
-    </div>
-    <h4>Interactive Buidlings Map View</h4>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="map" style="width: 1200px; height: 1000px">
-      </div>
-  </div>
-
-</body>
-
-
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="../js/app.js"></script>
-
+      <!-- The div where we'll insert our map -->
+      <div id="map" style="width: 1300px; height: 800px"></div>
+    
+      <!-- JavaScript file -->
+      <script type="text/javascript" src="../static/data/buildings.json"></script>
+      <script type="text/javascript" src="../static/js/map.js"></script>    
+  </body>
+    
 </html>
