@@ -19,40 +19,62 @@ The CBD Program is an example of transparency in data collection. This is an ins
 
 The research questions
 -
-Location, including Lat/Long and State
-Building name
-Building size
-Energy star rating
-Assessor
+1. What locations in Victoria have the highest number of energy efficient buildings?
+2. What is the correlation between annual emissions and office space?
+3. What is the best method of visually displaying this data for use?
+4. What are the ethical considerations when collecting and analysing this dataset?
 
 
 Methods
 -
+- Imported data as csv, processed using ETL, and created dataframe
+- Imported transformed data into Python and PostgresSQL in PGAdmin4
+- Created JSON files and tables 
+- Created Flask file and SQLite as an alternative to PostgresSQL
+- Used JSON data to complete data visualisations in Jupyter Notebook and JS + HTML
 
 Results
 -
+- Slide 18 - A bar chart representing the top ten suburbs in Victoria, that have the highest number of building certificates that achieve the highest rating in energy efficiency
+- Slide 19 - A scatterplot that shows the relationship between suburbs and greenhouse gas emmissions
+- Slide 20 - A map that displays the top twenty suburbs in Victoria with the highest energy emmissions
+- Slide 21 - A bar chart displaying the top 20 suburbs with the highest average star ratings
+- Slide 22 - A scatter plot displaying the annual energy consumption of a property in relation to the net lettable space of that property
+- Slide 26 - A interactive map that displays all properties listed in the dataset by location
 
-Limitations
+Limitations and future recommendations
 -
-
-Future recommendations
--
+- Using GitHub and branch for code revision management is of benefit, but has file limit <100mb. 
+- Acquiring data from public sites can be “dirty” and require extensive clean up and testing for errors.
+- Street Map will not load markers, using excess entries. 
+- Generating JSON data within FLASK using the SQLite DB was difficult and as an alternative we used a static JSON data file exported from Python.
+- Domain knowledge (or lack of time) can play a major role in DB backend & FLASK development, more time was needed to finish the FLASK (SQLite > JSON) back end creation.
 
 Usage Instructions:
 -
  Analysis
  -
- Visualisations
- - 
+ - ETL_Dataset.csv
+ - buildings_schema.sql
+ - buildings.json
+ - buildings.sqlite
+ - FullCSV_to_DataBase.ipynb
+ - FullCSV_to_MapData.ipynb
+ - Scatterplot.ipynb
+ 
  Dataset:
  -
 CBD Dataset - up to 2021
- https://www.cbd.gov.au/about-cbd-program/performance-program/download-cbd-program-data
+- https://www.cbd.gov.au/about-cbd-program/performance-program/download-cbd-program-data
 
-Installation and Run Instructions
--
- Data Files
+Data Files
  -
+- index.html
+- map.js
+- style.css
+- app.py
+- app.cpython-311.pyc
 
 Credits
 -
+This code was compiled and written by Ben Mason, Archana Kale, Erin Nicol, and Violet Bui in the 2024 Data Analytics Boot Camp hosted by Monash University.
