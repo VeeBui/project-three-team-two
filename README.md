@@ -54,24 +54,33 @@ Limitations and future recommendations
 
 Usage Instructions:
 -
- Analysis
+Dataset:
+ -
+ - https://www.cbd.gov.au/sites/default/files/2024-05/Full%20CBD%20downloadable%20dataset.csv
+ - https://www.cbd.gov.au/about-cbd-program/performance-program/download-cbd-program-data
+   
+ Data folder
  -
  - ETL_Dataset.csv
+ - ETL_Dataset.sqlite
  - buildings_schema.sql
  - buildings.json
  - buildings.sqlite
  - FullCSV_to_DataBase.ipynb
  - FullCSV_to_MapData.ipynb
- - Scatterplot.ipynb
- 
- Dataset:
- -
- -  https://www.cbd.gov.au/sites/default/files/2024-05/Full%20CBD%20downloadable%20dataset.csv
- - https://www.cbd.gov.au/about-cbd-program/performance-program/download-cbd-program-data
 
-Data Files
+ js folder
+ -
+ - Scatterplot.ipynb
+ - Analysis.ipynb
+
+
+Templates folder
  -
 - index.html
+
+Additional files:
+- 
 - map.js
 - style.css
 - app.py
