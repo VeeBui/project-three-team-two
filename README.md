@@ -32,6 +32,7 @@ Methods
 - Created JSON files and tables 
 - Created Flask file and SQLite as an alternative to PostgresSQL
 - Used JSON data to complete data visualisations in Jupyter Notebook and JS + HTML
+- Used a new library: Plotly Express, for visualisations
 
 Results
 -
