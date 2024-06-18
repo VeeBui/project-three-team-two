@@ -1,3 +1,4 @@
+
 Introduction
 -
 We are working for a building leasing and marketing company, and have been tasked with researching the Commercial Building Disclosure project, which can benefit from data visualisation. 
